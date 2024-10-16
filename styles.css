@@ -26,6 +26,7 @@ p {
     margin: 20px 0;
 }
 
+/* Botón de descarga */
 .download-button {
     display: inline-block;
     padding: 15px 30px;
@@ -36,6 +37,7 @@ p {
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    margin-right: 10px;
 }
 
 .download-button:hover {
@@ -44,4 +46,33 @@ p {
 
 .download-button:active {
     background-color: #004080;
+}
+
+/* Botón de vista rápida */
+.quick-view-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quick-view-button:hover {
+    background-color: #218838;
+}
+
+.quick-view-button:active {
+    background-color: #1e7e34;
+}
+
+/* Estilo para ocultar y mostrar el iframe */
+.hidden {
+    display: none;
+}
+
+#quick-view {
+    margin-top: 20px;
 }
