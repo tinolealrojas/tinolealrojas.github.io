@@ -9,9 +9,28 @@
 </head>
 <body>
     <div class="container">
-        <h1>Bienvenido a mi pagina sencilla para descargar mi CV</h1>
-        <p>Hola, soy José Juventino Leal Rojas. Aquí puedes descargar mi CV.</p>
+        <h1>Bienvenido</h1>
+        <p>Hola, soy José Juventino Leal Rojas. Aquí puedes descargar o visualizar mi CV.</p>
+        
         <a href="JoseLealCV.pdf" download class="download-button">Descargar CV</a>
+        
+        <button id="quick-view-btn" class="quick-view-button">Vista rápida</button>
+        
+        <div id="quick-view" class="hidden">
+            <iframe src="JoseLealCV.pdf" width="100%" height="600px"></iframe>
+        </div>
     </div>
+
+    <script>
+        // Script para mostrar el iframe al hacer clic en "Vista rápida"
+        document.getElementById("quick-view-btn").addEventListener("click", function() {
+            var quickViewDiv = document.getElementById("quick-view");
+            if (quickViewDiv.classList.contains("hidden")) {
+                quickViewDiv.classList.remove("hidden");
+            } else {
+                quickViewDiv.classList.add("hidden");
+            }
+        });
+    </script>
 </body>
 </html>
